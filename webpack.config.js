@@ -48,7 +48,7 @@ module.exports = {
       path: '/static',
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      names: ["vendor"],
+      names: ["vendor", "runtime"],
       minChunks: Infinity
     }),
     new webpack.optimize.UglifyJsPlugin({
